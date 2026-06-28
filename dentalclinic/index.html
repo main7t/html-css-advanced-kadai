@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="さわやか歯科クリニック｜地域の皆様が安心して通える、家族みんなのための歯科医院" />
+  <title>さわやか歯科クリニック｜ご家族に寄り添う優しい歯科治療</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- カスタムCSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== 1. 共通ヘッダー ========== -->
+  <header class="site-header sticky-top">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+      <!-- ロゴ -->
+      <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+        <img src="images/logo2.svg" alt="さわやか歯科クリニック ロゴ" class="logo-img" style="height: 50px; width: auto;"/>
+      </a>
+
+      <!-- ナビ + 予約ボタン -->
+      <nav class="d-none d-lg-flex align-items-center gap-4">
+        <ul class="nav-menu d-flex align-items-center gap-4 mb-0">
+          <li><a href="about.html">クリニック紹介</a></li>
+          <li><a href="services.html">診療内容</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="index.html#access">診療時間・アクセス</a></li>
+        </ul>
+        <a href="reserve.html" class="btn btn-reserve">
+          <i class="bi bi-calendar-check me-2"></i>WEB予約はこちら
+        </a>
+      </nav>
+
+      <!-- モバイル用予約ボタン -->
+      <a href="reserve.html" class="btn btn-reserve d-lg-none btn-sm">
+        <i class="bi bi-calendar-check me-1"></i>WEB予約
+      </a>
+    </div>
+  </header>
+
+  <!-- ========== 2. メインビジュアル ========== -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-center">
+      <h1 class="hero-title">
+        地域の皆様が安心して通える、<br />
+       家族みんなのための歯科医院
+      </h1>
+      <p class="hero-sub">
+        お子さまからご年配の方まで、地域のかかりつけ歯科として。
+      </p>
+      <a href="#" class="btn btn-reserve btn-lg mt-3">
+        <i class="bi bi-calendar-check me-2"></i>WEB予約はこちら
+      </a>
+    </div>
+  </section>
+   <!-- ========== 3. 更新情報（お知らせ） ========== -->
+  <section id="news" class="news-bar">
+    <div class="container">
+      <div class="news-inner d-flex align-items-center">
+        <div class="news-label">
+          <i class="bi bi-megaphone me-2"></i>お知らせ
+        </div>
+        <ul class="news-list mb-0">
+          <li>
+            <span class="news-date">2026.06.20</span>
+            <span class="news-text">さわやか歯科クリニックのホームページを開設しました！</span>
+          </li>
+        </ul>
+        <a href="#" class="news-more ms-auto d-none d-md-inline">一覧を見る <i class="bi bi-chevron-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. 当院の3つの特徴 ========== -->
+  <section id="features" class="features py-5">
+    <div class="container">
+      <div class="section-head text-center mb-5">
+        <p class="section-en">Our Features</p>
+        <h2 class="section-title">当院の3つの特徴</h2>
+      </div>
+      <div class="row g-4">
+        <!-- 特徴1 -->
+        <div class="col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-img">
+              <img src="images/feature-hygiene.png" alt="清潔で最新の設備" />
+            </div>
+            <div class="feature-body">
+              <span class="feature-num">01</span>
+              <h3 class="feature-title">清潔で最新の設備</h3>
+              <p class="feature-text">
+                患者さんが安心して治療を受けられるよう、徹底した衛生管理 と 最新の歯科医療機器 を導入。快適な環境で、質の高い治療を提供します。
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 特徴2 -->
+        <div class="col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-img">
+              <img src="images/feature-communication.png" alt="お口の健康を守る予防歯科" />
+            </div>
+            <div class="feature-body">
+              <span class="feature-num">02</span>
+              <h3 class="feature-title">お口の健康を守る予防歯科</h3>
+              <p class="feature-text">
+                「痛くなったら行く」のではなく、むし歯や歯周病を防ぐ予防ケア を大切にしています。定期検診・クリーニングで、大切な歯を一生涯守ります。
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 特徴3 -->
+        <div class="col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-img">
+              <img src="images/feature-painless.png" alt="痛みの少ないやさしい治療" />
+            </div>
+            <div class="feature-body">
+              <span class="feature-num">03</span>
+              <h3 class="feature-title">痛みの少ないやさしい治療</h3>
+              <p class="feature-text">
+                麻酔の工夫や最新の技術を取り入れ、痛みを最小限に抑えた治療 を心がけています。歯医者が苦手な方も、安心して通っていただけるよう配慮しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. 診療内容 ========== -->
+  <section id="quicknav" class="quicknav py-5">
+    <div class="container">
+ <div class="section-head text-center mb-5">
+        <p class="section-en">services</p>
+        <h2 class="section-title">診療内容</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <a href="services.html#genera" class="quicknav-card">
+            <i class="bi bi-heart-pulse quicknav-icon"></i>
+            <span class="quicknav-text">歯が痛い・しみる</span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="services.html#child" class="quicknav-card">
+            <i class="bi bi-emoji-smile quicknav-icon"></i>
+            <span class="quicknav-text">子どもの歯の相談</span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="services.html#prevent" class="quicknav-card">
+            <i class="bi bi-clipboard2-pulse quicknav-icon"></i>
+            <span class="quicknav-text">定期検診・クリーニング</span>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="services.html#surgical" class="quicknav-card">
+            <i class="bi bi-shield-plus quicknav-icon"></i>
+            <span class="quicknav-text">親知らず・あごの痛み</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- ========== 6. アクセス＆診療時間 ========== -->
+  <section id="access" class="access py-5">
+    <div class="container">
+      <div class="section-head text-center mb-5">
+        <p class="section-en">Access &amp; Hours</p>
+        <h2 class="section-title">診療時間・アクセス</h2>
+      </div>
+      <div class="row g-5 align-items-start">
+        <!-- 左：診療時間カレンダー -->
+        <div class="col-lg-6">
+          <h3 class="block-title"><i class="bi bi-clock me-2"></i>診療時間</h3>
+          <div class="table-responsive">
+            <table class="table hours-table text-center align-middle mb-3">
+              <thead>
+                <tr>
+                  <th scope="col">診療時間</th>
+                  <th scope="col">月</th>
+                  <th scope="col">火</th>
+                  <th scope="col">水</th>
+                  <th scope="col">木</th>
+                  <th scope="col">金</th>
+                  <th scope="col">土</th>
+                  <th scope="col">日</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">9:30 - 13:00</th>
+                  <td>○</td><td>○</td><td  class="rest">―</td><td>○</td><td>○</td><td>○</td><td class="rest">―</td>
+                </tr>
+                <tr>
+                  <th scope="row">14:00 - 18:30</th>
+                  <td>○</td><td>○</td><td class="rest">―</td><td>○</td><td>○</td><td class="half">―</td><td class="rest">―</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="hours-note mb-0">
+            △ 土曜は午前中のみ／休診日：水曜・日曜
+                    </p>
+        </div>
+
+        <!-- 右：地図＋住所 -->
+        <div class="col-lg-6">
+          <h3 class="block-title"><i class="bi bi-geo-alt me-2"></i>アクセス</h3>
+          <div class="map-frame mb-4">
+            <iframe
+              title="さわやか歯科クリニックの地図"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.284686174255!2d139.74706097594589!3d35.66999157259078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b927c298fb3%3A0xea0b60b137153378!2z44CSMTA1LTAwMDEg5p2x5Lqs6YO95riv5Yy66JmO44OO6ZaA77yR5LiB55uu77yTIOOCsOODreODvOODkOODq-OCueOCr-OCqOOCog!5e0!3m2!1sja!2sjp!4v1782622783568!5m2!1sja!2sjp"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <ul class="access-info list-unstyled mb-0">
+            <li>
+              <i class="bi bi-building me-2"></i>
+              <span>〒105-0001　東京都港区虎ノ門1丁目3-1</span>
+            </li>
+            <li>
+              <i class="bi bi-train-front me-2"></i>
+              <span>東京メトロ虎ノ門駅より直結・徒歩1分</span>
+            </li>
+            <li>
+              <i class="bi bi-p-circle me-2"></i>
+              <span>駐車場はございません。近隣のコインパーキングをご利用ください</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. 共通フッター ========== -->
+  <footer class="site-footer">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-lg-5">
+          <a href="index.html" class="logo d-inline-flex align-items-center text-decoration-none mb-3">
+        <img src="images/logo2.svg" alt="さわやか歯科クリニック ロゴ" class="logo-img" style="height: 50px; width: auto;"/>
+      </a>
+          <p class="footer-address mb-1">〒105-0001　東京都港区虎ノ門1丁目3-1</p>
+          <p class="footer-tel mb-0">
+            <i class="bi bi-telephone me-2"></i>TEL：03-1234-5678
+          </p>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h4 class="footer-head">メニュー</h4>
+          <ul class="footer-links list-unstyled mb-0">
+      <li><a href="about.html">クリニック紹介</a></li>
+            <li><a href="services.html">診療内容</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="index.html#access">診療時間・アクセス
+            </a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-head">ご予約</h4>
+          <a href="#" class="btn btn-reserve w-100">
+            <i class="bi bi-calendar-check me-2"></i>WEB予約はこちら
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center py-3">
+      <small>&copy; 2026 さわやか歯科クリニック All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
